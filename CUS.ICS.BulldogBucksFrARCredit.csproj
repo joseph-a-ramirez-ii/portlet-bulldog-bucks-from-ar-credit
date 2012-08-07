@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2154BF87-2B52-4E07-8F2C-1DBA90575E0C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CUS.ICS.BulldogBucksFrARCredit</RootNamespace>
+    <AssemblyName>Portlet.BulldogBucksFrARCredit</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Jenzabar.Common, Version=1.0.3407.25424, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Jenzabar\ICS.NET\Portal\bin\Jenzabar.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Jenzabar.ICS, Version=5.0.3440.24072, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Jenzabar\ICS.NET\Portal\bin\Jenzabar.ICS.dll</HintPath>
+    </Reference>
+    <Reference Include="Jenzabar.Portal.Framework, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Jenzabar\ICS.NET\Portal\bin\Jenzabar.Portal.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Jenzabar.Portal.Framework.Web, Version=5.0.3440.24069, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Jenzabar\ICS.NET\Portal\bin\Jenzabar.Portal.Framework.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Jenzabar.Portal.Web, Version=5.0.3440.24082, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Jenzabar\ICS.NET\Portal\bin\Jenzabar.Portal.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultView.ascx.cs">
+      <DependentUpon>DefaultView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultView.ascx.designer.cs">
+      <DependentUpon>DefaultView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.ascx.cs">
+      <DependentUpon>MainView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.ascx.designer.cs">
+      <DependentUpon>MainView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="BulldogBucksFrArCredit.cs" />
+    <Compile Include="NoPurchaseView.ascx.cs">
+      <DependentUpon>NoPurchaseView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseView.ascx.cs">
+      <DependentUpon>PurchaseView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseView.ascx.designer.cs">
+      <DependentUpon>PurchaseView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYouView.ascx.cs">
+      <DependentUpon>ThankYouView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYouView.ascx.designer.cs">
+      <DependentUpon>ThankYouView.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ThankYouView.ascx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DefaultView.ascx" />
+    <Content Include="MainView.ascx" />
+    <Content Include="NoPurchaseView.ascx" />
+    <Content Include="PurchaseView.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2741</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "\\portalplay\e$\Program Files\Jenzabar\ICS.NET\Portal\Portlets\CUS\ICS\BulldogBucksFrARCredit"
+copy "$(TargetPath)" "\\portalplay\e$\Program Files\Jenzabar\ICS.NET\Portal\bin" /Y
+copy "$(ProjectDir)\*.ascx" "\\portalplay\e$\Program Files\Jenzabar\ICS.NET\Portal\Portlets\CUS\ICS\BulldogBucksFrARCredit" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+</Project>
